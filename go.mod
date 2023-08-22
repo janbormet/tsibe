@@ -16,4 +16,4 @@ require (
 	golang.org/x/sys v0.0.0-20190124100055-b90733256f2e // indirect
 )
 
-replace go.dedis.ch/kyber/v3 => /home/jlb/git/kyber/
+replace go.dedis.ch/kyber/v3 => github.com/janbormet/kyber/v3 v3.0.0-20230816164006-4b138bdaa87d
