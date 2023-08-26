@@ -3,6 +3,7 @@ package main_test
 import (
 	"bytes"
 	"crypto/rand"
+	"fmt"
 	"github.com/stretchr/testify/require"
 	"go.dedis.ch/kyber/v3/pairing"
 	"gonum.org/v1/gonum/stat/combin"
@@ -26,15 +27,24 @@ func TestTSIBE(t *testing.T) {
 }*/
 
 func BenchmarkTSIBE_Enc(b *testing.B) {
-	b.Run("latency=1 ms", func(b *testing.B) {
-		benchEnc(b, 2, 6, 1*time.Millisecond)
-	})
-	b.Run("latency=10 ms", func(b *testing.B) {
-		benchEnc(b, 2, 6, 10*time.Millisecond)
-	})
-	b.Run("latency=100 ms", func(b *testing.B) {
-		benchEnc(b, 2, 6, 100*time.Millisecond)
-	})
+	ns := []int{6, 12, 18}
+	latencies := []time.Duration{1 * time.Millisecond, 10 * time.Millisecond, 100 * time.Millisecond}
+	for _, n := range ns {
+		for _, latency := range latencies {
+			t1 := n / 3
+			t2 := n / 2
+			t3 := 2 * n / 3
+			b.Run(fmt.Sprintf(":n=%d:t=%d:latency=%s", n, t1, latency.String()), func(b *testing.B) {
+				benchEnc(b, t1, n, latency)
+			})
+			b.Run(fmt.Sprintf(":n=%d:t=%d:latency=%s", n, t2, latency.String()), func(b *testing.B) {
+				benchEnc(b, t2, n, latency)
+			})
+			b.Run(fmt.Sprintf(":n=%d:t=%d:latency=%s", n, t3, latency.String()), func(b *testing.B) {
+				benchEnc(b, t3, n, latency)
+			})
+		}
+	}
 }
 
 func benchEnc(b *testing.B, t, n int, latency time.Duration) {
