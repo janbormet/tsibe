@@ -1,0 +1,31 @@
+goos: linux
+goarch: amd64
+pkg: tsibe
+cpu: AMD Ryzen 7 5800X 8-Core Processor             
+                                  │ didk-single-server.txt │
+                                  │         sec/op         │
+TSIBE_DIdkSingleServer/:par=1-16               140.6µ ± 2%
+TSIBE_DIdkSingleServer/:par=2-16               75.71µ ± 3%
+TSIBE_DIdkSingleServer/:par=3-16               52.13µ ± 2%
+TSIBE_DIdkSingleServer/:par=4-16               40.11µ ± 2%
+TSIBE_DIdkSingleServer/:par=5-16               32.47µ ± 4%
+TSIBE_DIdkSingleServer/:par=6-16               27.28µ ± 3%
+TSIBE_DIdkSingleServer/:par=7-16               24.06µ ± 3%
+TSIBE_DIdkSingleServer/:par=8-16               21.83µ ± 3%
+TSIBE_DIdkSingleServer/:par=9-16               19.91µ ± 2%
+TSIBE_DIdkSingleServer/:par=10-16              18.85µ ± 6%
+TSIBE_DIdkSingleServer/:par=11-16              17.85µ ± 3%
+TSIBE_DIdkSingleServer/:par=12-16              17.01µ ± 5%
+TSIBE_DIdkSingleServer/:par=13-16              16.18µ ± 1%
+TSIBE_DIdkSingleServer/:par=14-16              15.49µ ± 1%
+TSIBE_DIdkSingleServer/:par=15-16              15.18µ ± 2%
+TSIBE_DIdkSingleServer/:par=16-16              14.63µ ± 3%
+TSIBE_DIdkSingleServer/:par=17-16              14.90µ ± 3%
+TSIBE_DIdkSingleServer/:par=18-16              15.12µ ± 3%
+TSIBE_DIdkSingleServer/:par=19-16              15.41µ ± 3%
+TSIBE_DIdkSingleServer/:par=20-16              15.31µ ± 3%
+TSIBE_DIdkSingleServer/:par=21-16              15.20µ ± 4%
+TSIBE_DIdkSingleServer/:par=22-16              15.25µ ± 2%
+TSIBE_DIdkSingleServer/:par=23-16              15.53µ ± 4%
+TSIBE_DIdkSingleServer/:par=24-16              15.40µ ± 3%
+geomean                                        22.14µ

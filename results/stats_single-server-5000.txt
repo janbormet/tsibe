@@ -1,0 +1,31 @@
+goos: linux
+goarch: amd64
+pkg: tsibe
+cpu: AMD Ryzen 7 5800X 8-Core Processor             
+                                 │ single-server.txt │
+                                 │      sec/op       │
+TSIBE_EncSingleServer/:par=1-16          2.137m ± 2%
+TSIBE_EncSingleServer/:par=2-16          1.068m ± 2%
+TSIBE_EncSingleServer/:par=3-16          764.4µ ± 3%
+TSIBE_EncSingleServer/:par=4-16          592.8µ ± 3%
+TSIBE_EncSingleServer/:par=5-16          492.9µ ± 2%
+TSIBE_EncSingleServer/:par=6-16          411.2µ ± 1%
+TSIBE_EncSingleServer/:par=7-16          363.8µ ± 2%
+TSIBE_EncSingleServer/:par=8-16          333.9µ ± 1%
+TSIBE_EncSingleServer/:par=9-16          307.7µ ± 2%
+TSIBE_EncSingleServer/:par=10-16         287.0µ ± 2%
+TSIBE_EncSingleServer/:par=11-16         274.0µ ± 1%
+TSIBE_EncSingleServer/:par=12-16         258.5µ ± 1%
+TSIBE_EncSingleServer/:par=13-16         252.4µ ± 1%
+TSIBE_EncSingleServer/:par=14-16         243.9µ ± 1%
+TSIBE_EncSingleServer/:par=15-16         239.8µ ± 1%
+TSIBE_EncSingleServer/:par=16-16         237.1µ ± 2%
+TSIBE_EncSingleServer/:par=17-16         237.6µ ± 1%
+TSIBE_EncSingleServer/:par=18-16         238.3µ ± 2%
+TSIBE_EncSingleServer/:par=19-16         240.3µ ± 2%
+TSIBE_EncSingleServer/:par=20-16         238.3µ ± 2%
+TSIBE_EncSingleServer/:par=21-16         242.2µ ± 2%
+TSIBE_EncSingleServer/:par=22-16         240.1µ ± 2%
+TSIBE_EncSingleServer/:par=23-16         240.7µ ± 2%
+TSIBE_EncSingleServer/:par=24-16         239.5µ ± 2%
+geomean                                  340.9µ

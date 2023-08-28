@@ -1,0 +1,31 @@
+goos: linux
+goarch: amd64
+pkg: tsibe
+cpu: AMD Ryzen 7 5800X 8-Core Processor             
+                     │   dec.txt   │
+                     │   sec/op    │
+TSIBE_Dec/:par=1-16    1.295m ± 1%
+TSIBE_Dec/:par=2-16    656.2µ ± 2%
+TSIBE_Dec/:par=3-16    452.9µ ± 2%
+TSIBE_Dec/:par=4-16    349.8µ ± 2%
+TSIBE_Dec/:par=5-16    296.7µ ± 4%
+TSIBE_Dec/:par=6-16    253.7µ ± 3%
+TSIBE_Dec/:par=7-16    226.7µ ± 3%
+TSIBE_Dec/:par=8-16    209.6µ ± 3%
+TSIBE_Dec/:par=9-16    196.1µ ± 2%
+TSIBE_Dec/:par=10-16   184.2µ ± 3%
+TSIBE_Dec/:par=11-16   175.5µ ± 2%
+TSIBE_Dec/:par=12-16   167.0µ ± 3%
+TSIBE_Dec/:par=13-16   160.4µ ± 2%
+TSIBE_Dec/:par=14-16   155.7µ ± 1%
+TSIBE_Dec/:par=15-16   149.8µ ± 1%
+TSIBE_Dec/:par=16-16   146.2µ ± 0%
+TSIBE_Dec/:par=17-16   149.3µ ± 1%
+TSIBE_Dec/:par=18-16   152.0µ ± 3%
+TSIBE_Dec/:par=19-16   150.8µ ± 1%
+TSIBE_Dec/:par=20-16   150.7µ ± 2%
+TSIBE_Dec/:par=21-16   151.8µ ± 2%
+TSIBE_Dec/:par=22-16   151.6µ ± 1%
+TSIBE_Dec/:par=23-16   149.3µ ± 1%
+TSIBE_Dec/:par=24-16   151.5µ ± 1%
+geomean                212.9µ

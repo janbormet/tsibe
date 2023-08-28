@@ -1,0 +1,34 @@
+goos: linux
+goarch: amd64
+pkg: tsibe
+cpu: AMD Ryzen 7 5800X 8-Core Processor             
+                                      │ 100msg.txt  │
+                                      │   sec/op    │
+TSIBE_Enc/:n=6:t=2:latency=1ms-16       628.2µ ± 3%
+TSIBE_Enc/:n=6:t=3:latency=1ms-16       942.7µ ± 1%
+TSIBE_Enc/:n=6:t=4:latency=1ms-16       1.244m ± 2%
+TSIBE_Enc/:n=6:t=2:latency=10ms-16      799.0µ ± 1%
+TSIBE_Enc/:n=6:t=3:latency=10ms-16      1.073m ± 1%
+TSIBE_Enc/:n=6:t=4:latency=10ms-16      1.351m ± 1%
+TSIBE_Enc/:n=6:t=2:latency=100ms-16     2.633m ± 2%
+TSIBE_Enc/:n=6:t=3:latency=100ms-16     2.881m ± 2%
+TSIBE_Enc/:n=6:t=4:latency=100ms-16     3.109m ± 1%
+TSIBE_Enc/:n=12:t=4:latency=1ms-16      1.268m ± 1%
+TSIBE_Enc/:n=12:t=6:latency=1ms-16      1.871m ± 1%
+TSIBE_Enc/:n=12:t=8:latency=1ms-16      2.444m ± 1%
+TSIBE_Enc/:n=12:t=4:latency=10ms-16     1.376m ± 2%
+TSIBE_Enc/:n=12:t=6:latency=10ms-16     2.001m ± 2%
+TSIBE_Enc/:n=12:t=8:latency=10ms-16     2.559m ± 3%
+TSIBE_Enc/:n=12:t=4:latency=100ms-16    3.132m ± 3%
+TSIBE_Enc/:n=12:t=6:latency=100ms-16    3.614m ± 1%
+TSIBE_Enc/:n=12:t=8:latency=100ms-16    4.124m ± 1%
+TSIBE_Enc/:n=18:t=6:latency=1ms-16      1.878m ± 1%
+TSIBE_Enc/:n=18:t=9:latency=1ms-16      2.816m ± 1%
+TSIBE_Enc/:n=18:t=12:latency=1ms-16     3.707m ± 1%
+TSIBE_Enc/:n=18:t=6:latency=10ms-16     2.020m ± 2%
+TSIBE_Enc/:n=18:t=9:latency=10ms-16     2.926m ± 3%
+TSIBE_Enc/:n=18:t=12:latency=10ms-16    3.821m ± 1%
+TSIBE_Enc/:n=18:t=6:latency=100ms-16    3.609m ± 2%
+TSIBE_Enc/:n=18:t=9:latency=100ms-16    4.470m ± 1%
+TSIBE_Enc/:n=18:t=12:latency=100ms-16   5.301m ± 1%
+geomean                                 2.185m
