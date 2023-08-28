@@ -22,11 +22,6 @@ type TSIBE struct {
 	F     *ftkd.FTKD
 }
 
-type Timer struct {
-	start time.Time
-	end   time.Time
-}
-
 func NewTSIBE(suite *pairing.SuiteBn256, t, n int, latency time.Duration) *TSIBE {
 	return &TSIBE{
 		Suite: suite,
